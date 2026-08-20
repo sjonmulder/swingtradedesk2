@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #0a0d13;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(45, 212, 167, 0.06), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(239, 99, 81, 0.05), transparent 40%);
+  color: #e8eaed;
+}
+
+* {
+  scrollbar-color: #2e3546 #12161f;
+}
+
+::selection {
+  background: rgba(45, 212, 167, 0.25);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
